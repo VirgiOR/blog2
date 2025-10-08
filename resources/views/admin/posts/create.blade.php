@@ -28,7 +28,7 @@
                 placeholder="Escriba el slug del Post"></flux:input>
             <flux:select label="Categoría" name="category_id">
                 @foreach ($categories as $category)
-                    <flux:select.option value="{{ $category->id }}">
+                    <flux:select.option value="{{ $category->id }}"  >
                         {{ $category->name }}
                     </flux:select.option>
                 @endforeach
