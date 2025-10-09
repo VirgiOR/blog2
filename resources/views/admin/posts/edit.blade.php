@@ -29,7 +29,7 @@
             <img id="imgPreview" class="w-full aspect-video object-cover object-center"
                 src="{{ $post->image_path ? Storage::url($post->image_path) : 'https://thumb.ac-illust.com/b1/b170870007dfa419295d949814474ab2_t.jpeg' }}">
 
-            <div class="absolute top-8  right-8">
+            <div class="absolute top-0 right-0">
                 <label class="bg-white px-4 py-2 rounded-lg cursor-pointer">
                     Cambiar imagen
                     <input class="hidden" type="file" name="image" accept="image/*" onchange="previewImage(event, '#imgPreview')">
